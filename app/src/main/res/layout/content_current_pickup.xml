@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techwarriors.mavdriver.CurrentPickup"
+    tools:showIn="@layout/activity_current_pickup"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pickup1"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="73dp"
+        android:text="Source :"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/tvdes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/src"
+        android:layout_below="@+id/src"
+        android:layout_marginTop="45dp"
+        android:text="Destination :" />
+
+    <TextView
+        android:id="@+id/tvsrc"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/src"
+        android:layout_alignBottom="@+id/src"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/tvdes1" />
+
+    <TextView
+        android:id="@+id/tvdes"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvdes1"
+        android:layout_alignBottom="@+id/tvdes1"
+        android:layout_alignStart="@+id/tvsrc" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvdes1"
+        android:layout_below="@+id/tvdes1"
+        android:layout_marginTop="64dp"
+        android:text="Riders :" />
+
+    <TextView
+        android:id="@+id/riders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/tvdes1"
+        android:textColor="#ffffff" />
+
+
+    <Button
+        android:id="@+id/pickup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/noshow2"
+        android:layout_centerHorizontal="true"
+        android:text="Pick Up"
+        android:background="#adf987"/>
+
+    <Button
+        android:id="@+id/noshow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="No Show!"
+        android:background="#f69d9d"/>
+
+</RelativeLayout>
